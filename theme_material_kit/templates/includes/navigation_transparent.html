@@ -56,21 +56,21 @@
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-                
+
                 {% if request.user.is_superuser %}
                 <a href="{% url 'admin:index' %}" class="dropdown-item border-radius-md">
                 {% else %}
-                  <a href="#" class="dropdown-item border-radius-md">
+                  <a href="/" class="dropdown-item border-radius-md">
                 {% endif %}
                   <span>Dashboard</span>
                 </a>
-                <a href="#" class="dropdown-item border-radius-md">
+                <a href="{% url 'about-us' %}" class="dropdown-item border-radius-md">
                   <span>About Us</span>
                 </a>
-                <a href="#" class="dropdown-item border-radius-md">
+                <a href="{% url 'contact-us' %}" class="dropdown-item border-radius-md">
                   <span>Contact Us</span>
                 </a>
-                <a href="#" class="dropdown-item border-radius-md">
+                <a href="{% url 'author' %}" class="dropdown-item border-radius-md">
                   <span>Author</span>
                 </a>
                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
@@ -86,18 +86,18 @@
                       <span>Logout</span>
                     </a>
                   {% else %}
-                    <a href="#" class="dropdown-item border-radius-md">
+                    <a href="{% url 'password_change' %}" class="dropdown-item border-radius-md">
                       <span>Change Password</span>
                     </a>
-                    <a href="#" class="dropdown-item border-radius-md">
+                    <a href="{% url 'logout' %}" class="dropdown-item border-radius-md">
                       <span>Logout</span>
                     </a>
                   {% endif %}
                 {% else %}
-                <a href="#" class="dropdown-item border-radius-md">
+                <a href="{% url 'login' %}" class="dropdown-item border-radius-md">
                   <span>Sign In</span>
                 </a>
-                <a href="#" class="dropdown-item border-radius-md">
+                <a href="{% url 'register' %}" class="dropdown-item border-radius-md">
                   <span>Sign Up</span>
                 </a>
                 {% endif %}
@@ -107,19 +107,20 @@
                   Landing Pages
                 </h6>
                 {% if request.user.is_superuser %}
-                  <a href="{% url 'admin:index' %}" class="dropdown-item border-radius-md">
+                {% if request.user.is_superuser %}
+                <a href="{% url 'admin:index' %}" class="dropdown-item border-radius-md">
                 {% else %}
-                  <a href="#" class="dropdown-item border-radius-md">
+                  <a href="/" class="dropdown-item border-radius-md">
                 {% endif %}
                   <span>Dashboard</span>
                 </a>
-                <a href="#" class="dropdown-item border-radius-md">
+                <a href="{% url 'about-us' %}" class="dropdown-item border-radius-md">
                   <span>About Us</span>
                 </a>
-                <a href="#" class="dropdown-item border-radius-md">
+                <a href="{% url 'contact-us' %}" class="dropdown-item border-radius-md">
                   <span>Contact Us</span>
                 </a>
-                <a href="#" class="dropdown-item border-radius-md">
+                <a href="{% url 'author' %}" class="dropdown-item border-radius-md">
                   <span>Author</span>
                 </a>
                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
@@ -135,18 +136,18 @@
                       <span>Logout</span>
                     </a>
                   {% else %}
-                    <a href="#" class="dropdown-item border-radius-md">
+                    <a href="{% url 'password_change' %}" class="dropdown-item border-radius-md">
                       <span>Change Password</span>
                     </a>
-                    <a href="#" class="dropdown-item border-radius-md">
+                    <a href="{% url 'logout' %}" class="dropdown-item border-radius-md">
                       <span>Logout</span>
                     </a>
                   {% endif %}
                 {% else %}
-                <a href="#" class="dropdown-item border-radius-md">
+                <a href="{% url 'login' %}" class="dropdown-item border-radius-md">
                   <span>Sign In</span>
                 </a>
-                <a href="#" class="dropdown-item border-radius-md">
+                <a href="{% url 'register' %}" class="dropdown-item border-radius-md">
                   <span>Sign Up</span>
                 </a>
                 {% endif %}

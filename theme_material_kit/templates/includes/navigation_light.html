@@ -55,7 +55,12 @@
                       {% endif %}
                   {% endfor %}
               {% endif %}
-              <a href="#" class="dropdown-item border-radius-md">
+              
+              {% if request.user.is_superuser %}
+                <a href="{% url 'admin:index' %}" class="dropdown-item border-radius-md">
+              {% else %}
+                <a href="#" class="dropdown-item border-radius-md">
+              {% endif %}
                 <span>Dashboard</span>
               </a>
               <a href="#" class="dropdown-item border-radius-md">
@@ -100,7 +105,11 @@
               <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
                 Landing Pages
               </h6>
-              <a href="#" class="dropdown-item border-radius-md">
+              {% if request.user.is_superuser %}
+              <a href="{% url 'admin:index' %}" class="dropdown-item border-radius-md">
+              {% else %}
+                <a href="#" class="dropdown-item border-radius-md">
+              {% endif %}
                 <span>Dashboard</span>
               </a>
               <a href="#" class="dropdown-item border-radius-md">

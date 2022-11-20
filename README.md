@@ -42,14 +42,27 @@ $ pip install git+https://github.com/app-generator/django-theme-material-kit.git
 
 <br />
 
-> Add `admin_material` application to the `INSTALLED_APPS` setting of your Django project `settings.py` file (note it should be before `django.contrib.admin`):
+> Add `theme_material_kit` application to the `INSTALLED_APPS` setting of your Django project `settings.py` file (note it should be before `django.contrib.admin`):
 
 ```python
     INSTALLED_APPS = (
         ...
-        'django.contrib.admin',
         'theme_material_kit.apps.ThemeMaterialKitConfig',    # <-- To be checked the Syntax
+        'django.contrib.admin',
     )
+```
+
+<br />
+
+> Add `theme_material_kit` urls in your Django Project `urls.py` file.
+
+```python
+    from django.urls import path, include
+
+    urlpatterns = [
+        ...
+        path('', include('theme_material_kit.urls')),
+    ]
 ```
 
 <br />

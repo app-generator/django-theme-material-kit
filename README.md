@@ -100,6 +100,8 @@ $ # Start the application (development mode)
 $ python manage.py runserver # default port 8000
 ```
 
+<br />
+
 ## Screenshots
 
 > [Django Theme Material Kit](https://github.com/app-generator/django-theme-material-kit) - `Cover`

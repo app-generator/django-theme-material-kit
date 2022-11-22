@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.0.3] 2022-11-22
+### Improvements
+
+- `Update AUTH` forms
+  - Added cross links (`signIn`, `signUP`) 
+
 ## [1.0.2] 2022-11-22
 ### Improvements
 

@@ -2,15 +2,11 @@
 
 Modern template for **Django** coded on top of **Material Kit**, an open-source `Boostrap 5` design from `Creative-Tim`. 
 
-> NOTE: The theme aims to style the pages for the common users (not admin section).
-
-**Design Version**: https://github.com/creativetimofficial/material-kit `v3.0.3`
-
 <br>
 
 **Links & Resources**
 
-- UI Kit: [Material Design BS5](https://www.creative-tim.com/product/material-kit?AFFILIATE=128200) `v3.0.4` by Creative-Tim
+- UI Kit: [Material Design BS5](https://www.creative-tim.com/product/material-kit?AFFILIATE=128200) `v3.0.3` by Creative-Tim
 - [Django Theme MKit](https://github.com/app-generator/django-theme-material-kit-playground) - `playground project` 
 
 <br />
@@ -45,11 +41,25 @@ $ pip install git+https://github.com/app-generator/django-theme-material-kit.git
 > Add `theme_material_kit` application to the `INSTALLED_APPS` setting of your Django project `settings.py` file (note it should be before `django.contrib.admin`):
 
 ```python
-    INSTALLED_APPS = (
-        ...
-        'theme_material_kit.apps.ThemeMaterialKitConfig',    # <-- To be checked the Syntax
-        'django.contrib.admin',
-    )
+INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+
+    'theme_material_kit',          # <-- NEW 
+]
+```
+
+<br />
+
+> Update project `settings.py` file to include (at the end of the file):
+
+```python
+LOGIN_REDIRECT_URL = '/'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ```
 
 <br />
@@ -57,11 +67,11 @@ $ pip install git+https://github.com/app-generator/django-theme-material-kit.git
 > Add `theme_material_kit` urls in your Django Project `urls.py` file.
 
 ```python
-    from django.urls import path, include
+    from django.urls import path, include              # <-- UPD with 'include' directive
 
     urlpatterns = [
         ...
-        path('', include('theme_material_kit.urls')),
+        path('', include('theme_material_kit.urls')),  #  <-- NEW
     ]
 ```
 

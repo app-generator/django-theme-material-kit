@@ -21,6 +21,7 @@ Modern template for **Django** coded on top of **Material Kit**, an open-source 
 - `Responsive Interface`
 - `Minimal Template` overriding
 - `Easy integration`
+- ALL `UI KIT` pages available
 
 <br />
 

@@ -100,17 +100,19 @@ $ # Start the application (development mode)
 $ python manage.py runserver # default port 8000
 ```
 
-<br />
-
-## How to use the theme
-
-> Ordinary users set up
-
 ## Screenshots
 
-@todo
+![Django Theme Material Kit - Cover](https://user-images.githubusercontent.com/51070104/203402055-6c29dce8-ee03-4f43-89fb-4673e2e32b44.jpg)
+
+<br />
+
+![Django Theme Material Kit - Author](https://user-images.githubusercontent.com/51070104/203402231-fc44eaa0-3a90-44b4-ad6d-34e3025ce908.jpg)
+
+<br />
+
+![Django Theme Material Kit - Author](https://user-images.githubusercontent.com/51070104/203402322-4d77ab42-6ef9-4d17-b09e-5f1b7e57e9e9.jpg)
 
 <br />
 
 ---
-**[Django Admin Material](https://github.com/app-generator/django-admin-material-dashboard)** - Modern Admin Interface provided by **[AppSeed](https://appseed.us/)**
+**[Django Theme Material Kit](https://github.com/app-generator/django-theme-material-kit)** - Modern Theme provided by **[AppSeed](https://appseed.us/)**

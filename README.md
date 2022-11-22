@@ -2,6 +2,8 @@
 
 Modern template for **Django** coded on top of **Material Kit**, an open-source `Boostrap 5` design from `Creative-Tim`. 
 
+> Actively supported by [AppSeed](https://appseed.us/) via `Email` and `Discord`.
+
 <br>
 
 **Links & Resources**

@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## [1.0.6] 2022-11-22
+## [1.0.7] 2022-11-22
 ### Improvements
 
 - Links Update

@@ -71,12 +71,12 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 > Add `theme_material_kit` urls in your Django Project `urls.py` file.
 
 ```python
-    from django.urls import path, include              # <-- UPD with 'include' directive
+from django.urls import path, include              # <-- UPD with 'include' directive
 
-    urlpatterns = [
-        ...
-        path('', include('theme_material_kit.urls')),  #  <-- NEW
-    ]
+urlpatterns = [
+    ...
+    path('', include('theme_material_kit.urls')),  #  <-- NEW
+]
 ```
 
 <br />

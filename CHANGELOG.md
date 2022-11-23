@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [1.0.12] 2022-11-23
+### Improvements
+
+- DOCS Update
+
 ## [1.0.11] 2022-11-23
 ### Improvements
 

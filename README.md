@@ -18,6 +18,14 @@ Modern template for **Django** coded on top of **Material Kit**, an open-source 
 
 <br>
 
+## `Video Presentation`
+
+> This material provides `more information` about this library and the `playground project`.
+
+https://user-images.githubusercontent.com/51070104/203486210-db744130-4243-4ccb-87ca-17556952a276.mp4
+
+<br />
+
 ## Why `Django Material Kit`
 
 - Modern `Bootstrap 5` Design

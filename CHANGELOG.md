@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.0.11] 2022-11-23
+### Improvements
+
+- Added Video presentation:
+  - [Django Material Kit](https://www.youtube.com/watch?v=LkFNuotJEUM) - `Open-Source PyPi Library`
+
 ## [1.0.10] 2022-11-23
 ### Improvements
 

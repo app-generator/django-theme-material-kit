@@ -41,7 +41,7 @@ $ pip install git+https://github.com/app-generator/django-theme-material-kit.git
 
 <br />
 
-> Add `theme_material_kit` application to the `INSTALLED_APPS` setting of your Django project `settings.py` file (note it should be before `django.contrib.admin`):
+> Add `theme_material_kit` application to the `INSTALLED_APPS` setting of your Django project `settings.py`:
 
 ```python
 INSTALLED_APPS = [

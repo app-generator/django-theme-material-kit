@@ -8,8 +8,9 @@ Modern template for **Django** coded on top of **Material Kit**, an open-source 
 
 **Links & Resources**
 
-- UI Kit: [Material Design BS5](https://www.creative-tim.com/product/material-kit?AFFILIATE=128200) `v3.0.3` by Creative-Tim
+- [Django Material Kit](https://django-material-kit.appseed-srv1.com/) - LIVE Demo
 - [Django Theme MKit](https://github.com/app-generator/django-theme-mkit-playground) - `playground project` 
+- UI Kit: [Material Design BS5](https://www.creative-tim.com/product/material-kit?AFFILIATE=128200) `v3.0.3` by Creative-Tim
 
 <br />
 

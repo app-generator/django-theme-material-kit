@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [1.0.15] 2023-01-11
+### Improvements
+
+- Curate Links (minor) 
+
 ## [1.0.14] 2023-01-11
 ### Improvements
 

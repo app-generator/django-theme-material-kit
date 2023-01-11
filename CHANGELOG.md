@@ -46,6 +46,11 @@
 
 - Links Update
 
+## [1.0.4] 2023-01-11
+### Changes
+
+- DOCS Update (readme)
+
 ## [1.0.3] 2022-11-22
 ### Improvements
 

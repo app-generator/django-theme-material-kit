@@ -113,9 +113,9 @@ $ python manage.py runserver # default port 8000
 
 **Material Kit 2** is a premium design crafted by the `Creative-Tim` agency on top of Bootstrap 5 Framework. Designed for those who like bold elements and beautiful websites, Material Kit 2 is made of hundreds of elements, designed blocks, and fully coded pages built with an impressive level of quality.
 
-- 👉 [Django Material Kit2 PRO](https://appseed.us/product/material-kit2-pro/django/) - product page
-  - ✅ `Enhanced UI` - more pages and components
-  - ✅ `Priority` on support
+- [Django Material Kit2 PRO](https://appseed.us/product/material-kit2-pro/django/) - product page
+  - `Enhanced UI` - more pages and components
+  - `Priority` on support
 
 <br />  
 

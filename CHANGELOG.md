@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [1.0.14] 2023-01-11
+### Improvements
+
+- AUTH Flow Updates (Minor)
+
 ## [1.0.13] 2023-01-11
 ### Improvements
 

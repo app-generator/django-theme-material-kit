@@ -147,7 +147,7 @@ For instance, if we want to customize the `index.html` these are the steps:
 - `Step 1`: create the `templates` DIRECTORY inside your app 
 - `Step 2`: configure the project to use this new template directory
   - Edit `settings.py` TEMPLATES section 
-- `Step 3`: copy the `footer.html` from the original location (inside your ENV) and save it to the `YOUR_APP/templates` DIR
+- `Step 3`: copy the `index.html` from the original location (inside your ENV) and save it to the `YOUR_APP/templates` DIR
   - Source PATH: `<YOUR_ENV>/LIB/theme_material_kit/templates/pages/index.html`
   - Destination PATH: `YOUR_APP/templates/pages/index.html`
 - Edit the `index.html` (Destination PATH)     

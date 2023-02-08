@@ -109,6 +109,55 @@ $ python manage.py runserver # default port 8000
 
 <br />
 
+## How to Customize 
+
+When a template file is loaded, `Django` scans all template directories starting from the ones defined by the user, and returns the first match or an error in case the template is not found. 
+The theme used to style this starter provides the following files: 
+
+```bash
+# This exists in ENV: LIB/theme_material_kit
+< UI_LIBRARY_ROOT >                      
+   |
+   |-- templates/                     # Root Templates Folder 
+   |    |          
+   |    |-- accounts/       
+   |    |    |-- sign-in.html         # Sign IN Page
+   |    |    |-- sign-up.html         # Sign UP Page
+   |    |
+   |    |-- includes/       
+   |    |    |-- footer.html          # Footer component
+   |    |    |-- navigation.html      # Navigation Bar
+   |    |    |-- scripts.html         # Scripts Component
+   |    |
+   |    |-- layouts/       
+   |    |    |-- base.html            # Masterpage
+   |    |
+   |    |-- pages/       
+   |         |-- index.html           # Dashboard Page
+   |         |-- author.html          # Profile Page
+   |         |-- *.html               # All other pages
+   |    
+   |-- ************************************************************************
+```
+
+When the project requires customization, we need to copy the original file that needs an update (from the virtual environment) and place it in the template folder using the same path. 
+
+For instance, if we want to customize the `footer.html` these are the steps:
+
+- `Step 1`: create the `templates` DIRECTORY inside your app 
+- `Step 2`: configure the project to use this new template directory
+  - Edit `settings.py` TEMPLATES section 
+- `Step 3`: copy the `footer.html` from the original location (inside your ENV) and save it to the `YOUR_APP/templates` DIR
+  - Source PATH: `<YOUR_ENV>/LIB/theme_material_kit/templates/includes/footer.html`
+  - Destination PATH: `YOUR_APP/templates/includes/footer.html`
+- Edit the `footer.html` (Destination PATH)     
+
+At this point, the default version of the `footer.html` shipped in the library is ignored by Django.
+
+In a similar way, all other files and components can be customized easily.
+
+<br />
+
 ## [PRO Version](https://appseed.us/product/material-kit2-pro/django/)   
 
 **Material Kit 2** is a premium design crafted by the `Creative-Tim` agency on top of Bootstrap 5 Framework. Designed for those who like bold elements and beautiful websites, Material Kit 2 is made of hundreds of elements, designed blocks, and fully coded pages built with an impressive level of quality.

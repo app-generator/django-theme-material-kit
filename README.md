@@ -1,6 +1,6 @@
 # [Django Theme Material Kit](https://appseed.us/product/material-kit/django/)
 
-Modern Theme for **Django** that covers authentication pages (registration included) crafted on top of **[Material Kit](https://appseed.us/product/material-kit/django/)**, an open-source `Bootstrap 5` design from [Creative-Tim](https://www.creative-tim.com/product/material-kit?AFFILIATE=128200).
+Modern Theme for **Django** that covers authentication pages (registration included) crafted on top of **[Material Kit](https://appseed.us/product/material-kit/django/)**, an open-source `Bootstrap 5` design from [Creative-Tim](https://www.creative-tim.com/?AFFILIATE=128200).
 
 > Actively supported by [AppSeed](https://appseed.us/) via `Email` and `Discord`.
 
@@ -10,7 +10,7 @@ Modern Theme for **Django** that covers authentication pages (registration inclu
 
 - [Django Material Kit](https://appseed.us/product/material-kit/django/) - `Product page`
   - `Features`: Fully-configured, `CI/CD` via Render
-- UI Kit: `Material Kit` (Bootstrap 5) by [Creative-Tim](https://www.creative-tim.com/product/material-kit?AFFILIATE=128200)
+- UI Kit: [Material Kit](https://www.creative-tim.com/product/material-kit?AFFILIATE=128200) (Bootstrap 5) by `Creative-Tim`
 - **Sections Covered**: 
   - `All pages` managed by `Django.contrib.AUTH`
   - `Registration` page

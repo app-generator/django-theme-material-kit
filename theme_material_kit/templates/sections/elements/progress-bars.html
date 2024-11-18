@@ -1,14 +1,12 @@
-{% extends 'layouts/base_background.html' %}
+{% extends "layouts/base.html" %}
 {% load static %}
 
-{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
-{% block body %} class="progress-bars-sections" {% endblock body %}
+{% block body %}progress-bars-sections{% endblock body %}
 
-{% block header %}
+{% block navigation %}
+  {% include "includes/navigation-light.html" %}
+{% endblock navigation %}
 
-{% include 'includes/navigation_light.html' %}
-
-{% endblock header %}
 
 {% block content %}
 
@@ -55,7 +53,7 @@
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-6 mt-4">
   <div class="container">
     <div class="row justify-space-between py-2">
@@ -135,7 +133,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -155,7 +153,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -175,7 +173,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -189,16 +187,13 @@
     </div>
   </div>
 
-  {% endblock content %}
-  
-  {% block footer %}
-  
-  {% include 'includes/footer_fullscreen.html' %}
-  
-  {% endblock footer %}
+{% endblock content %}
 
-  {% block javascripts %}
-  
-  {% include 'includes/scripts_sections.html' %}
-  
-  {% endblock javascripts %}
+{% block footer %}
+  {% include "includes/footer-light.html" %}
+{% endblock footer %}
+
+{% block extra_js %}
+  <script src="{% static "assets/js/plugins/prism.min.js" %}"></script>
+  <script src="{% static "assets/js/plugins/highlight.min.js" %}"></script>
+{% endblock extra_js %}

@@ -1,14 +1,11 @@
-{% extends 'layouts/base_background.html' %}
+{% extends "layouts/base.html" %}
 {% load static %}
 
-{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
-{% block body %} class="pagination-sections" {% endblock body %}
+{% block body %}pagination-sections{% endblock body %}
 
-{% block header %}
-
-{% include 'includes/navigation_light.html' %}
-
-{% endblock header %}
+{% block navigation %}
+  {% include "includes/navigation-light.html" %}
+{% endblock navigation %}
 
 {% block content %}
 
@@ -55,7 +52,7 @@
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7">
   <div class="container">
     <div class="row justify-space-between py-2">
@@ -63,7 +60,7 @@
         <ul class="pagination pagination-primary m-4">
           <li class="page-item">
             <a class="page-link" href="javascript:;" aria-label="Previous">
-              <span aria-hidden="true"><i class="material-icons" aria-hidden="true">chevron_left</i></span>
+              <span aria-hidden="true"><i class="material-symbols-rounded" aria-hidden="true">chevron_left</i></span>
             </a>
           </li>
           <li class="page-item active">
@@ -83,7 +80,7 @@
           </li>
           <li class="page-item">
             <a class="page-link" href="javascript:;" aria-label="Next">
-              <span aria-hidden="true"><i class="material-icons" aria-hidden="true">chevron_right</i></span>
+              <span aria-hidden="true"><i class="material-symbols-rounded" aria-hidden="true">chevron_right</i></span>
             </a>
           </li>
         </ul>
@@ -92,8 +89,8 @@
   </div>
 </section>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-pagination-simple">
@@ -106,7 +103,7 @@
         <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination pagination-primary m-4"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">aria-label=</span><span class="s">"Previous"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>chevron_left<span class="nt">&lt;/i&gt;&lt;/span&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"material-symbols-rounded"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>chevron_left<span class="nt">&lt;/i&gt;&lt;/span&gt;</span>
             <span class="nt">&lt;/a&gt;</span>
           <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item active"</span><span class="nt">&gt;</span>
@@ -126,7 +123,7 @@
           <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">aria-label=</span><span class="s">"Next"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>chevron_right<span class="nt">&lt;/i&gt;&lt;/span&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"material-symbols-rounded"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>chevron_right<span class="nt">&lt;/i&gt;&lt;/span&gt;</span>
             <span class="nt">&lt;/a&gt;</span>
           <span class="nt">&lt;/li&gt;</span>
         <span class="nt">&lt;/ul&gt;</span>
@@ -149,7 +146,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -169,7 +166,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -183,16 +180,13 @@
     </div>
   </div>
 
-  {% endblock content %}
-  
-  {% block footer %}
-  
-  {% include 'includes/footer_fullscreen.html' %}
-  
-  {% endblock footer %}
+{% endblock content %}
 
-  {% block javascripts %}
-  
-  {% include 'includes/scripts_sections.html' %}
-  
-  {% endblock javascripts %}
+{% block footer %}
+  {% include "includes/footer-light.html" %}
+{% endblock footer %}
+
+{% block extra_js %}
+  <script src="{% static "assets/js/plugins/prism.min.js" %}"></script>
+  <script src="{% static "assets/js/plugins/highlight.min.js" %}"></script>
+{% endblock extra_js %}

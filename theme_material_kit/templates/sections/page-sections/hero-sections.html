@@ -1,14 +1,11 @@
-{% extends 'layouts/base_background.html' %}
+{% extends "layouts/base.html" %}
 {% load static %}
- 
-{% block title %}{% endblock title %}
-{% block body %} class="page-headers-sections" {% endblock body %}  
 
-{% block header %}
+{% block body %}page-headers-sections{% endblock body %}
 
-{% include 'includes/navigation_light.html' %}
-
-{% endblock header %}
+{% block navigation %}
+  {% include "includes/navigation-light.html" %}
+{% endblock navigation %}
 
 {% block content %}
 
@@ -55,7 +52,7 @@
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <!-- -------- START HEADER 1 w/ text and image on right ------- -->
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark navbar-absolute bg-transparent shadow-none">
@@ -108,7 +105,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
-          <h1 class="text-white mb-4">Material Kit</h1>
+          <h1 class="text-white font-weight-black mb-4">Material Kit</h1>
           <p class="text-white opacity-8 lead pe-5 me-5">The time is now for it be okay to be great. People in this world shun people for being nice. </p>
           <div class="buttons">
             <button type="button" class="btn btn-white mt-4">Get Started</button>
@@ -178,7 +175,7 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-6 col-md-7 d-flex justify-content-center flex-column"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-white mb-4"</span><span class="nt">&gt;</span>Material Kit<span class="nt">&lt;/h1&gt;</span>
+          <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-white font-weight-black mb-4"</span><span class="nt">&gt;</span>Material Kit<span class="nt">&lt;/h1&gt;</span>
           <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-white opacity-8 lead pe-5 me-5"</span><span class="nt">&gt;</span>The time is now for it be okay to be great. People in this world shun people for being nice. <span class="nt">&lt;/p&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-white mt-4"</span><span class="nt">&gt;</span>Get Started<span class="nt">&lt;/button&gt;</span>
@@ -205,7 +202,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -225,7 +222,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -245,7 +242,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -265,7 +262,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -285,7 +282,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -305,7 +302,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -325,7 +322,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -345,7 +342,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -365,7 +362,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -378,33 +375,30 @@
       </div>
     </div>
   </div>
-  {% endblock content %}
 
-  {% block footer %}
-  
-  {% include 'includes/footer_fullscreen.html' %}
-  
-  {% endblock footer %}
+{% endblock content %}
 
-  {% block javascripts %}
-  
-    <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
-    <script src="{% static 'js/plugins/countup.min.js' %}"></script>
-    {% include 'includes/scripts_sections.html' %}
+{% block footer %}
+  {% include "includes/footer-light.html" %}
+{% endblock footer %}
 
-    <script>
-      if (document.getElementById('typed')) {
-        var typed = new Typed("#typed", {
-          stringsElement: '#typed-strings',
-          typeSpeed: 70,
-          backSpeed: 50,
-          backDelay: 200,
-          startDelay: 500,
-          loop: true
-        });
-      }
-    </script>
-  
-  
-  {% endblock javascripts %}
-  
+{% block extra_js %}
+
+  <script src="{% static "assets/js/plugins/countup.min.js" %}"></script>
+  <script src="{% static "assets/js/plugins/prism.min.js" %}"></script>
+  <script src="{% static "assets/js/plugins/highlight.min.js" %}"></script>
+
+  <script>
+    if (document.getElementById('typed')) {
+      var typed = new Typed("#typed", {
+        stringsElement: '#typed-strings',
+        typeSpeed: 70,
+        backSpeed: 50,
+        backDelay: 200,
+        startDelay: 500,
+        loop: true
+      });
+    }
+  </script>
+
+{% endblock extra_js %}

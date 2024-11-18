@@ -1,14 +1,11 @@
-{% extends 'layouts/base_background.html' %}
+{% extends "layouts/base.html" %}
 {% load static %}
 
-{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
-{% block body %} class="badges-sections" {% endblock body %}
+{% block body %}badges-sections{% endblock body %}
 
-{% block header %}
-
-{% include 'includes/navigation_light.html' %}
-
-{% endblock header %}
+{% block navigation %}
+  {% include "includes/navigation-light.html" %}
+{% endblock navigation %}
 
 {% block content %}
 
@@ -55,12 +52,12 @@
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7 mt-3">
   <div class="container">
     <div class="row justify-space-between text-center py-2">
       <div class="col-12">
-        <span class="badge bg-gradient-primary">Primary</span>
+        <span class="badge bg-gradient-dark">Primary</span>
         <span class="badge bg-gradient-secondary">Secondary</span>
         <span class="badge bg-gradient-success">Success</span>
         <span class="badge bg-gradient-danger">Danger</span>
@@ -73,8 +70,8 @@
   </div>
 </section>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-badges">
@@ -84,7 +81,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between text-center py-2"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-gradient-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-gradient-dark"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-gradient-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-gradient-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-gradient-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/span&gt;</span>
@@ -132,7 +129,7 @@
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7 mt-3">
   <div class="container">
     <div class="row justify-space-between text-center py-2">
@@ -150,8 +147,8 @@
   </div>
 </section>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-badges-simple">
@@ -209,7 +206,7 @@
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7 mt-3">
   <div class="container">
     <div class="row justify-space-between text-center py-2">
@@ -227,8 +224,8 @@
   </div>
 </section>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-badges-simple-rounded">
@@ -258,16 +255,14 @@
       </div>
     </div>
   </div>
-  {% endblock content %}
-  
-  {% block footer %}
-  
-  {% include 'includes/footer_fullscreen.html' %}
-  
-  {% endblock footer %}
 
-  {% block javascripts %}
-  
-  {% include 'includes/scripts_sections.html' %}
-  
-  {% endblock javascripts %}
+{% endblock content %}
+
+{% block footer %}
+  {% include "includes/footer-light.html" %}
+{% endblock footer %}
+
+{% block extra_js %}
+  <script src="{% static "assets/js/plugins/prism.min.js" %}"></script>
+  <script src="{% static "assets/js/plugins/highlight.min.js" %}"></script>
+{% endblock extra_js %}

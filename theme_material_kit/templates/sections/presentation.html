@@ -1,20 +1,17 @@
-{% extends 'layouts/base_background.html' %}
-
+{% extends "layouts/base.html" %}
 {% load static %}
 
-{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
-
-{% block body %} class="presentation-page bg-gray-200" {% endblock body %}
+{% block body %}presentation-page bg-gray-200{% endblock body %}
 
 {% block content %}
 
   <header class="header-2">
-    <div class="page-header min-vh-75 relative" style="background-image: url('{% static 'img/bg2.jpg' %}')">
-      <span class="mask bg-gradient-primary opacity-4"></span>
+    <div class="page-header min-vh-75 relative" style="background-image: url('{% static "assets/img/bg-landing.jpg" %}')">
+      <span class="mask bg-gradient-dark opacity-4"></span>
       <div class="container">
         <div class="row">
           <div class="col-lg-7 text-center mx-auto">
-            <h1 class="text-white pt-3 mt-n5">Material Kit 2</h1>
+            <h1 class="text-white font-weight-black pt-3 mt-n5">Material Kit 3</h1>
             <p class="lead text-white mt-3">Free & Open Source Web UI Kit built over Bootstrap 5. <br /> Join over 1.6 million developers around the world. </p>
           </div>
         </div>
@@ -29,7 +26,7 @@
             <div class="row">
               <div class="col-md-4 position-relative">
                 <div class="p-3 text-center">
-                  <h1 class="text-gradient text-primary"><span id="state1" countTo="70">0</span>+</h1>
+                  <h1 class="text-gradient text-dark"><span id="state1" countTo="70">0</span>+</h1>
                   <h5 class="mt-3">Coded Elements</h5>
                   <p class="text-sm font-weight-normal">From buttons, to inputs, navbars, alerts or cards, you are covered</p>
                 </div>
@@ -37,7 +34,7 @@
               </div>
               <div class="col-md-4 position-relative">
                 <div class="p-3 text-center">
-                  <h1 class="text-gradient text-primary"> <span id="state2" countTo="15">0</span>+</h1>
+                  <h1 class="text-gradient text-dark"> <span id="state2" countTo="15">0</span>+</h1>
                   <h5 class="mt-3">Design Blocks</h5>
                   <p class="text-sm font-weight-normal">Mix the sections, change the colors and unleash your creativity</p>
                 </div>
@@ -45,7 +42,7 @@
               </div>
               <div class="col-md-4">
                 <div class="p-3 text-center">
-                  <h1 class="text-gradient text-primary" id="state3" countTo="4">0</h1>
+                  <h1 class="text-gradient text-dark" id="state3" countTo="4">0</h1>
                   <h5 class="mt-3">Pages</h5>
                   <p class="text-sm font-weight-normal">Save 3-4 weeks of work when you use our pre-made pages for your website</p>
                 </div>
@@ -60,10 +57,10 @@
         <div class="row align-items-center">
           <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
             <div class="rotating-card-container">
-              <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
+              <div class="card card-rotate card-background card-background-mask-primary shadow-dark mt-md-0 mt-5">
                 <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
                   <div class="card-body py-7 text-center">
-                    <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                    <i class="material-symbols-rounded text-white text-4xl my-3">touch_app</i>
                     <h3 class="text-white">Feel the <br /> Material Kit</h3>
                     <p class="text-white opacity-8">All the Bootstrap components that you need in a development have been re-design with the new look.</p>
                   </div>
@@ -72,7 +69,7 @@
                   <div class="card-body pt-7 text-center">
                     <h3 class="text-white">Discover More</h3>
                     <p class="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
-                    <a href="{% url 'page_header' %}" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
+                    <a href=".//sections/page-sections/hero-sections.html" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
                   </div>
                 </div>
               </div>
@@ -82,14 +79,14 @@
             <div class="row justify-content-start">
               <div class="col-md-6">
                 <div class="info">
-                  <i class="material-icons text-gradient text-primary text-3xl">content_copy</i>
+                  <i class="material-symbols-rounded text-gradient text-success text-3xl">content_copy</i>
                   <h5 class="font-weight-bolder mt-3">Full Documentation</h5>
                   <p class="pe-5">Built by developers for developers. Check the foundation and you will find everything inside our documentation.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info">
-                  <i class="material-icons text-gradient text-primary text-3xl">flip_to_front</i>
+                  <i class="material-symbols-rounded text-gradient text-success text-3xl">flip_to_front</i>
                   <h5 class="font-weight-bolder mt-3">Bootstrap 5 Ready</h5>
                   <p class="pe-3">The world’s most popular front-end open source toolkit, featuring Sass variables and mixins.</p>
                 </div>
@@ -97,13 +94,13 @@
             </div>
             <div class="row justify-content-start mt-5">
               <div class="col-md-6 mt-3">
-                <i class="material-icons text-gradient text-primary text-3xl">price_change</i>
+                <i class="material-symbols-rounded text-gradient text-success text-3xl">price_change</i>
                 <h5 class="font-weight-bolder mt-3">Save Time & Money</h5>
                 <p class="pe-5">Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System.</p>
               </div>
               <div class="col-md-6 mt-3">
                 <div class="info">
-                  <i class="material-icons text-gradient text-primary text-3xl">devices</i>
+                  <i class="material-symbols-rounded text-gradient text-success text-3xl">devices</i>
                   <h5 class="font-weight-bolder mt-3">Fully Responsive</h5>
                   <p class="pe-3">Regardless of the screen size, the website content will naturally fit the given resolution.</p>
                 </div>
@@ -118,7 +115,7 @@
         <div class="row">
           <div class="row justify-content-center text-center my-sm-5">
             <div class="col-lg-6">
-              <span class="badge bg-primary mb-3">Infinite combinations</span>
+              <span class="badge bg-success mb-3">Infinite combinations</span>
               <h2 class="text-dark mb-0">Huge collection of sections</h2>
               <p class="lead">We have created multiple options for you to put together and customise into pixel perfect pages. </p>
             </div>
@@ -136,7 +133,7 @@
           <div class="col-lg-9">
             <div class="row">
               <div class="col-md-4 mt-md-0">
-                <a href="{% url 'page_header' %}">
+                <a href="./sections/page-sections/hero-sections.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/headers.jpg" alt="hero">
                   </div>
@@ -147,7 +144,7 @@
                 </a>
               </div>
               <div class="col-md-4 mt-md-0 mt-4">
-                <a href="{% url 'features' %}">
+                <a href="./sections/page-sections/features.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/features.jpg" alt="features">
                   </div>
@@ -430,7 +427,7 @@
           <div class="col-lg-9">
             <div class="row mt-3">
               <div class="col-md-4">
-                <a href="{% url 'navbar' %}">
+                <a href="./sections/navigation/navbars.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 m-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/navbars.jpg" alt="navbars">
                   </div>
@@ -441,7 +438,7 @@
                 </a>
               </div>
               <div class="col-md-4 mt-md-0 mt-4">
-                <a href="{% url 'nav_tabs' %}">
+                <a href="./sections/navigation/nav-tabs.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 m-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/nav-tabs.jpg" alt="navtabs">
                   </div>
@@ -452,7 +449,7 @@
                 </a>
               </div>
               <div class="col-md-4 mt-md-0 mt-4">
-                <a href="{% url 'pagination' %}">
+                <a href="./sections/navigation/pagination.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 m-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/pagination.jpg" alt="pagination">
                   </div>
@@ -517,7 +514,7 @@
                 </a>
               </div>
               <div class="col-md-4 mt-md-0 mt-4">
-                <a href="{% url 'forms' %}">
+                <a href="./sections/input-areas/forms.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 m-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/forms.jpg" alt="forms">
                   </div>
@@ -530,7 +527,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-4">
-                <a href="{% url 'inputs' %}">
+                <a href="./sections/input-areas/inputs.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/inputs.jpg" alt="inputs">
                   </div>
@@ -553,7 +550,7 @@
           <div class="col-lg-9">
             <div class="row mt-3">
               <div class="col-md-4">
-                <a href="{% url 'alerts' %}">
+                <a href="./sections/attention-catchers/alerts.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/alerts.jpg" alt="alerts">
                   </div>
@@ -585,7 +582,7 @@
                 </a>
               </div>
               <div class="col-md-4 mt-md-0 mt-4">
-                <a href="{% url 'tooltips' %}">
+                <a href="./sections/attention-catchers/tooltips-popovers.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/popovers.jpg" alt="tooltip_popover">
                   </div>
@@ -598,7 +595,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-4 mt-md-0 mt-3">
-                <a href="{% url 'modals' %}">
+                <a href="./sections/attention-catchers/modals.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/modals.jpg" alt="modals">
                   </div>
@@ -621,7 +618,7 @@
           <div class="col-lg-9">
             <div class="row mt-3">
               <div class="col-md-4">
-                <a href="{% url 'buttons' %}">
+                <a href="./sections/elements/buttons.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/buttons.jpg" alt="buttons">
                   </div>
@@ -632,7 +629,7 @@
                 </a>
               </div>
               <div class="col-md-4 mt-md-0 mt-4">
-                <a href="{% url 'avatars' %}">
+                <a href="./sections/elements/avatars.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/avatars.jpg" alt="avatars">
                   </div>
@@ -643,7 +640,7 @@
                 </a>
               </div>
               <div class="col-md-4 mt-md-0 mt-4">
-                <a href="{% url 'dropdowns' %}">
+                <a href="./sections/elements/dropdowns.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/dropdowns.jpg" alt="dropdowns">
                   </div>
@@ -656,7 +653,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-4">
-                <a href="{% url 'toggles' %}">
+                <a href="./sections/elements/toggles.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/switch.jpg" alt="toggles">
                   </div>
@@ -711,7 +708,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-4 mt-md-0 mt-3">
-                <a href="{% url 'breadcrumbs' %}">
+                <a href="./sections/elements/breadcrumbs.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/breadcrumbs.jpg" alt="breadcrumbs">
                   </div>
@@ -722,7 +719,7 @@
                 </a>
               </div>
               <div class="col-md-4 mt-md-0 mt-4">
-                <a href="{% url 'badges' %}">
+                <a href="./sections/elements/badges.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/badges.jpg" alt="badges">
                   </div>
@@ -733,7 +730,7 @@
                 </a>
               </div>
               <div class="col-md-4 mt-md-0 mt-4">
-                <a href="{% url 'progress_bars' %}">
+                <a href="./sections/elements/progress-bars.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/progress.jpg" alt="progress">
                   </div>
@@ -767,7 +764,7 @@
                 </a>
               </div>
               <div class="col-md-4 mt-md-0 mt-4">
-                <a href="{% url 'typography' %}">
+                <a href="./sections/elements/typography.html">
                   <div class="card shadow-lg move-on-hover min-height-160 min-height-160">
                     <img class="w-100 my-auto" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections/typography.jpg" alt="typography">
                   </div>
@@ -787,7 +784,7 @@
         <div class="row">
           <div class="row text-center my-sm-5 mt-5">
             <div class="col-lg-6 mx-auto">
-              <span class="badge bg-primary mb-3">Boost creativity</span>
+              <span class="badge bg-success mb-3">Boost creativity</span>
               <h2 class="">With our coded pages</h2>
               <p class="lead">The easiest way to get started is to use one of our <br /> pre-built example pages. </p>
             </div>
@@ -799,7 +796,7 @@
           <div class="col-md-8">
             <div class="row mt-4">
               <div class="col-md-6">
-                <a href="{% url 'about-us' %}">
+                <a href="./pages/about-us.html">
                   <div class="card move-on-hover">
                     <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/about-us.jpg" alt="aboutus">
                   </div>
@@ -809,7 +806,7 @@
                 </a>
               </div>
               <div class="col-md-6 mt-md-0 mt-5">
-                <a href="{% url 'contact-us' %}">
+                <a href="./pages/contact-us.html">
                   <div class="card move-on-hover">
                     <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/contact-us.jpg" alt="contacus">
                   </div>
@@ -819,7 +816,7 @@
                 </a>
               </div>
               <div class="col-md-6 mt-md-3 mt-6">
-                <a href="{% url 'login' %}">
+                <a href="./pages/sign-in.html">
                   <div class="card move-on-hover">
                     <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/sign-in.jpg" alt="signin">
                   </div>
@@ -829,7 +826,7 @@
                 </a>
               </div>
               <div class="col-md-6 mt-md-3 mt-6">
-                <a href="{% url 'author' %}">
+                <a href="./pages/author.html">
                   <div class="card move-on-hover">
                     <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/author.jpg" alt="author">
                   </div>
@@ -855,9 +852,9 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 ms-lg-5">
-              <h4 class="text-white">Built by developers</h4>
-              <h1 class="text-white">Complex Documentation</h1>
-              <p class="lead text-white opacity-8">From colors, cards, typography to complex elements, you will find the full documentation. Play with the utility classes and you will create unlimited combinations for our components.</p>
+              <h5 class="text-white">Built by developers</h5>
+              <h2 class="text-white font-weight-bolder">Complex Documentation</h2>
+              <p class=" text-white opacity-8">From colors, cards, typography to complex elements, you will find the full documentation. Play with the utility classes and you will create unlimited combinations for our components.</p>
               <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit" class="text-white icon-move-right">
                 Read docs
                 <i class="fas fa-arrow-right text-sm ms-1"></i>
@@ -870,8 +867,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <div class="info-horizontal bg-gradient-primary border-radius-xl d-block d-md-flex p-4">
-            <i class="material-icons text-white text-3xl">flag</i>
+          <div class="info-horizontal bg-gradient-dark border-radius-xl d-block d-md-flex p-4">
+            <i class="material-symbols-rounded text-white text-3xl">flag</i>
             <div class="ps-0 ps-md-3 mt-3 mt-md-0">
               <h5 class="text-white">Getting Started</h5>
               <p class="text-white">Check the possible ways of working with our product and the necessary files for building your own project.</p>
@@ -884,11 +881,11 @@
         </div>
         <div class="col-lg-4 px-lg-1 mt-lg-0 mt-4">
           <div class="info-horizontal bg-gray-100 border-radius-xl d-block d-md-flex p-4 h-100">
-            <i class="material-icons text-gradient text-primary text-3xl">precision_manufacturing</i>
+            <i class="material-symbols-rounded text-gradient text-success text-3xl">precision_manufacturing</i>
             <div class="ps-0 ps-md-3 mt-3 mt-md-0">
               <h5>Plugins</h5>
               <p>Get inspiration and have an overview about the plugins that we used to create the Material Kit.</p>
-              <a href="https://www.creative-tim.com/learning-lab/bootstrap/datepicker/material-kit" class="text-primary icon-move-right">
+              <a href="https://www.creative-tim.com/learning-lab/bootstrap/datepicker/material-kit" class="text-success icon-move-right">
                 Read more
                 <i class="fas fa-arrow-right text-sm ms-1"></i>
               </a>
@@ -897,11 +894,11 @@
         </div>
         <div class="col-lg-4 mt-lg-0 mt-4">
           <div class="info-horizontal bg-gray-100 border-radius-xl d-block d-md-flex p-4">
-            <i class="material-icons text-gradient text-primary text-3xl">receipt_long</i>
+            <i class="material-symbols-rounded text-gradient text-success text-3xl">receipt_long</i>
             <div class="ps-0 ps-md-3 mt-3 mt-md-0">
               <h5>Utility Classes</h5>
               <p>Material Kit is giving you a lot of pre-made elements. For those who want flexibility, we included many utility classes.</p>
-              <a href="https://www.creative-tim.com/learning-lab/bootstrap/utilities/material-kit" class="text-primary icon-move-right">
+              <a href="https://www.creative-tim.com/learning-lab/bootstrap/utilities/material-kit" class="text-success icon-move-right">
                 Read more
                 <i class="fas fa-arrow-right text-sm ms-1"></i>
               </a>
@@ -915,8 +912,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mx-auto text-center">
-            <h2 class="mb-0">Trusted by over</h2>
-            <h2 class="text-gradient text-primary mb-3">1,679,477+ web developers</h2>
+            <h2 class="mb-0 font-weight-bolder">Trusted by over</h2>
+            <h2 class="text-gradient font-weight-bolder text-success mb-3">2,603,000+ web developers</h2>
             <p class="lead">Many Fortune 500 companies, startups, universities and governmental institutions love Creative Tim's products. </p>
           </div>
         </div>
@@ -934,17 +931,17 @@
                 </div>
                 <p class="mt-4">"This is an excellent product, the documentation is excellent and helped me get things done more efficiently."</p>
                 <div class="rating mt-3">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-8 ms-md-auto">
-            <div class="card bg-gradient-primary">
+            <div class="card bg-dark">
               <div class="card-body">
                 <div class="author align-items-center">
                   <div class="name">
@@ -978,11 +975,11 @@
                 </div>
                 <p class="mt-4">"Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!."</p>
                 <div class="rating mt-3">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
                 </div>
               </div>
             </div>
@@ -991,33 +988,33 @@
         <hr class="horizontal dark my-5">
         <div class="row">
           <div class="col-lg-2 col-md-4 col-6 ms-auto">
-            <img class="w-100 opacity-6" src="{% static 'img/logos/gray-logos/logo-apple.svg' %}" alt="Logo">
+            <img class="w-100 opacity-6" src="{% static "assets/img/logos/gray-logos/logo-apple.svg" %}" alt="Logo">
           </div>
           <div class="col-lg-2 col-md-4 col-6">
-            <img class="w-100 opacity-6" src="{% static 'img/logos/gray-logos/logo-facebook.svg' %}" alt="Logo">
+            <img class="w-100 opacity-6" src="{% static "assets/img/logos/gray-logos/logo-facebook.svg" %}" alt="Logo">
           </div>
           <div class="col-lg-2 col-md-4 col-6">
-            <img class="w-100 opacity-6" src="{% static 'img/logos/gray-logos/logo-nasa.svg' %}" alt="Logo">
+            <img class="w-100 opacity-6" src="{% static "assets/img/logos/gray-logos/logo-nasa.svg" %}" alt="Logo">
           </div>
           <div class="col-lg-2 col-md-4 col-6 ms-lg-0 ms-md-auto">
-            <img class="w-100 opacity-6" src="{% static 'img/logos/gray-logos/logo-vodafone.svg' %}" alt="Logo">
+            <img class="w-100 opacity-6" src="{% static "assets/img/logos/gray-logos/logo-vodafone.svg" %}" alt="Logo">
           </div>
           <div class="col-lg-2 col-md-4 col-6 me-md-auto mx-md-0 mx-auto">
-            <img class="w-100 opacity-6" src="{% static 'img/logos/gray-logos/logo-digitalocean.svg' %}" alt="Logo">
+            <img class="w-100 opacity-6" src="{% static "assets/img/logos/gray-logos/logo-digitalocean.svg" %}" alt="Logo">
           </div>
         </div>
       </div>
     </section>
     <section class="py-sm-7" id="download-soft-ui">
       <div class="bg-gradient-dark position-relative m-3 border-radius-xl overflow-hidden">
-        <img src="{% static 'img/shapes/waves-white.svg' %}" alt="pattern-lines" class="position-absolute start-0 top-md-0 w-100 opacity-2">
+        <img src="{% static "assets/img/shapes/waves-white.svg" %}" alt="pattern-lines" class="position-absolute start-0 top-md-0 w-100 opacity-2">
         <div class="container py-7 postion-relative z-index-2 position-relative">
           <div class="row">
             <div class="col-md-7 mx-auto text-center">
-              <h3 class="text-white mb-0">Do you love this awesome</h3>
+              <h3 class="h4 text-white mb-0">Do you love this awesome</h3>
               <h3 class="text-white">UI Kit for Bootstrap 5?</h3>
               <p class="text-white mb-5">Cause if you do, it can be yours for FREE. Hit the button below to navigate to Creative Tim where you can find the Design System in HTML. Start a new project or give an old Bootstrap project a new look!</p>
-              <a href="https://appseed.us/product/material-kit/django/" target="_blank" class="btn btn-primary btn-lg mb-3 mb-sm-0">Download </a>
+              <a href="https://www.creative-tim.com/product/material-kit" class="btn btn-success btn-lg mb-3 mb-sm-0">Download HTML</a>
             </div>
           </div>
         </div>
@@ -1068,21 +1065,21 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7 col-12 my-auto">
-            <h3 class="text-gradient text-primary mb-0">You liked it and</h3>
+            <h3 class="text-gradient text-dark mb-0">You liked it and</h3>
             <h3>Want more?</h3>
             <p class="pe-md-5 mb-4">
-              Most complex and innovative Design System Made by <a href="https://creative-tim.com/?AFFILIATE=128200" target="_blank">Creative Tim </a> . Check our latest Premium Bootstrap 5 UI Kit.
+              Most complex and innovative Design System Made by <a href="https://creative-tim.com/" target="_blank">Creative Tim </a> . Check our latest Premium Bootstrap 5 UI Kit.
               Designed for those who like bold elements and beautiful websites. Made of hundred of elements, designed blocks and fully coded pages, Material Kit is ready to help you create stunning websites and webapps.
             </p>
             <div class="github-buttons">
-              <a href="https://appseed.us/product/material-kit2-pro/django/" target="_blank" class="btn bg-gradient-primary mb-5 mb-sm-0">Download PRO</a>
+              <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2" target="_blank" class="btn bg-gradient-dark mb-5 mb-sm-0">Upgrade to Pro</a>
               <div class="github-button">
                 <span></span>
               </div>
             </div>
           </div>
           <div class="col-md-5 col-12 my-auto">
-            <a href="https://appseed.us/product/material-kit2-pro/django/" target="_blank">
+            <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2">
               <img class="w-100 border-radius-lg shadow-lg" src="https://s3.amazonaws.com/creativetim_bucket/products/46/original/material-kit-pro.jpg?1632843641" alt="Product Image">
             </a>
           </div>
@@ -1101,10 +1098,10 @@
             <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Kit%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23bootstrap5&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit" class="btn btn-twitter mb-0 me-2" target="_blank">
               <i class="fab fa-twitter me-1"></i> Tweet
             </a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://appseed.us/product/material-kit/django/" class="btn btn-facebook mb-0 me-2" target="_blank">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-kit" class="btn btn-facebook mb-0 me-2" target="_blank">
               <i class="fab fa-facebook-square me-1"></i> Share
             </a>
-            <a href="https://www.pinterest.com/pin/create/button/?url=https://appseed.us/product/material-kit/django/" class="btn btn-pinterest mb-0 me-2" target="_blank">
+            <a href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-kit" class="btn btn-pinterest mb-0 me-2" target="_blank">
               <i class="fab fa-pinterest me-1"></i> Pin it
             </a>
           </div>
@@ -1115,47 +1112,41 @@
   </div>
 {% endblock content %}
 
-{% block javascripts %}
+{% block extra_js %}
 
-<!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
-<script src="{% static 'js/plugins/countup.min.js' %}"></script>
-<script src="{% static 'js/plugins/choices.min.js' %}"></script>
-<script src="{% static 'js/plugins/prism.min.js' %}"></script>
-<script src="{% static 'js/plugins/highlight.min.js' %}"></script>
-<!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
-<script src="{% static 'js/plugins/rellax.min.js' %}"></script>
-<!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
-<script src="{% static 'js/plugins/tilt.min.js' %}"></script>
-<!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
-<script src="{% static 'js/plugins/choices.min.js' %}"></script>
-
-
-<script type="text/javascript">
-
-  if (document.getElementById('state1')) {
-    const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
-    if (!countUp.error) {
-      countUp.start();
-    } else {
-      console.error(countUp.error);
+  <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+  <script src="{% static "assets/js/plugins/countup.min.js" %}"></script>
+  <!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+  <script src="{% static "assets/js/plugins/rellax.min.js" %}"></script>
+  <!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+  <script src="{% static "assets/js/plugins/tilt.min.js" %}"></script>
+  <!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+  <script src="{% static "assets/js/plugins/choices.min.js" %}"></script>
+  <script type="text/javascript">
+    if (document.getElementById('state1')) {
+      const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+      if (!countUp.error) {
+        countUp.start();
+      } else {
+        console.error(countUp.error);
+      }
     }
-  }
-  if (document.getElementById('state2')) {
-    const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
-    if (!countUp1.error) {
-      countUp1.start();
-    } else {
-      console.error(countUp1.error);
+    if (document.getElementById('state2')) {
+      const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+      if (!countUp1.error) {
+        countUp1.start();
+      } else {
+        console.error(countUp1.error);
+      }
     }
-  }
-  if (document.getElementById('state3')) {
-    const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
-    if (!countUp2.error) {
-      countUp2.start();
-    } else {
-      console.error(countUp2.error);
-    };
-  }
-</script>
+    if (document.getElementById('state3')) {
+      const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+      if (!countUp2.error) {
+        countUp2.start();
+      } else {
+        console.error(countUp2.error);
+      };
+    }
+  </script>
 
-{% endblock javascripts %}
+{% endblock extra_js %}

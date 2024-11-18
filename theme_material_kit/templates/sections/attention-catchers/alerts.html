@@ -1,14 +1,11 @@
-{% extends 'layouts/base_background.html' %}
+{% extends "layouts/base.html" %}
 {% load static %}
 
-{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
-{% block body %} class="alerts-sections" {% endblock body %}
+{% block body %}alerts-sections{% endblock body %}
 
-{% block header %}
-
-{% include 'includes/navigation_light.html' %}
-
-{% endblock header %}
+{% block navigation %}
+  {% include "includes/navigation-light.html" %}
+{% endblock navigation %}
 
 {% block content %}
 
@@ -18,7 +15,7 @@
         <div class="mb-4 w-100 w-md-50 w-lg-25">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="/">Attention Catchers</a></li>
+              <li class="breadcrumb-item"><a href="https://demos.creative-tim.com/material-kit-pro/index">Attention Catchers</a></li>
               <li class="breadcrumb-item active" aria-current="page">Alerts</li>
             </ol>
           </nav>
@@ -53,7 +50,7 @@
               <iframe class="w-100 height-600" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <div class="container py-5">
   <div class="row">
     <div class="alert alert-primary text-white font-weight-bold" role="alert">
@@ -131,7 +128,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -151,7 +148,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -171,7 +168,7 @@
                 <span class="badge bg-light text-dark"><i class="fas fa-lock me-1" aria-hidden="true"></i> Screenshot</span>
               </div>
               <div class="col-lg-4 text-end my-auto">
-                <a href="https://appseed.us/product/material-kit2-pro/django/" class="text-primary icon-move-right">Get the Code
+                <a href="https://demos.creative-tim.com/material-kit-pro/index#pricing-soft-ui" class="text-primary icon-move-right">Get the Code
                   <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                 </a>
               </div>
@@ -185,16 +182,13 @@
     </div>
   </div>
 
-  {% endblock content %}
-  
-  {% block footer %}
-  
-  {% include 'includes/footer_fullscreen.html' %}
-  
-  {% endblock footer %}
+{% endblock content %}
 
-  {% block javascripts %}
-  
-  {% include 'includes/scripts_sections.html' %}
-  
-  {% endblock javascripts %}
+{% block footer %}
+  {% include "includes/footer-light.html" %}
+{% endblock footer %}
+
+{% block extra_js %}
+  <script src="{% static "assets/js/plugins/prism.min.js" %}"></script>
+  <script src="{% static "assets/js/plugins/highlight.min.js" %}"></script>
+{% endblock extra_js %}

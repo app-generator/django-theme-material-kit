@@ -1,14 +1,11 @@
-{% extends 'layouts/base_background.html' %}
+{% extends "layouts/base.html" %}
 {% load static %}
 
-{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
-{% block body %} class="inputs-sections" {% endblock body %}
+{% block body %}inputs-sections{% endblock body %}
 
-{% block header %}
-
-{% include 'includes/navigation_light.html' %}
-
-{% endblock header %}
+{% block navigation %}
+  {% include "includes/navigation-light.html" %}
+{% endblock navigation %}
 
 {% block content %}
 
@@ -55,7 +52,7 @@
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7">
   <div class="container">
     <div class="row justify-space-between py-2">
@@ -69,9 +66,9 @@
   </div>
 </section>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-input-simple">
@@ -126,7 +123,7 @@
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7">
   <div class="container">
     <div class="row justify-space-between py-2">
@@ -140,9 +137,9 @@
   </div>
 </section>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-input-icon-label">
@@ -196,7 +193,7 @@
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7">
   <div class="container">
     <div class="row justify-space-between py-2">
@@ -210,9 +207,9 @@
   </div>
 </section>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-input-outline">
@@ -267,7 +264,7 @@
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7">
   <div class="container">
     <div class="row justify-space-between py-2">
@@ -281,9 +278,9 @@
   </div>
 </section>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-input-icon">
@@ -338,7 +335,7 @@
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7">
   <div class="container">
     <div class="row justify-space-between py-2">
@@ -349,9 +346,9 @@
   </div>
 </section>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-input-success">
@@ -403,7 +400,7 @@
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7">
   <div class="container">
     <div class="row justify-space-between py-2">
@@ -414,9 +411,9 @@
   </div>
 </section>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-input-error">
@@ -468,7 +465,7 @@
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7">
   <div class="container">
     <div class="row justify-space-between py-2">
@@ -479,9 +476,9 @@
   </div>
 </section>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-input-disabled">
@@ -505,16 +502,13 @@
     </div>
   </div>
 
-  {% endblock content %}
-  
-  {% block footer %}
-  
-  {% include 'includes/footer_fullscreen.html' %}
-  
-  {% endblock footer %}
+{% endblock content %}
 
-  {% block javascripts %}
-  
-  {% include 'includes/scripts_sections.html' %}
-  
-  {% endblock javascripts %}
+{% block footer %}
+  {% include "includes/footer-light.html" %}
+{% endblock footer %}
+
+{% block extra_js %}
+  <script src="{% static "assets/js/plugins/prism.min.js" %}"></script>
+  <script src="{% static "assets/js/plugins/highlight.min.js" %}"></script>
+{% endblock extra_js %}

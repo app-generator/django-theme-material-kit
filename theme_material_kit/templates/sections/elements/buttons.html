@@ -1,14 +1,12 @@
-{% extends 'layouts/base_background.html' %}
+{% extends "layouts/base.html" %}
 {% load static %}
 
-{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
-{% block body %} class="buttons-sections" {% endblock body %}
+{% block body %}buttons-sections{% endblock body %}
 
-{% block header %}
+{% block navigation %}
+  {% include "includes/navigation-light.html" %}
+{% endblock navigation %}
 
-{% include 'includes/navigation_light.html' %}
-
-{% endblock header %}
 
 {% block content %}
 
@@ -54,8 +52,8 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7 mt-3">
   <div class="container">
     <div class="row justify-space-between text-center py-2">
@@ -84,7 +82,7 @@
   </div>
 </section>
 
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-buttons-gradient">
@@ -152,9 +150,9 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7 mt-3">
   <div class="container">
     <div class="row justify-space-between text-center py-2">
@@ -183,7 +181,7 @@
   </div>
 </section>
 
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-buttons">
@@ -251,9 +249,9 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7 mt-3">
   <div class="container">
     <div class="row justify-space-between text-center py-2">
@@ -282,7 +280,7 @@
   </div>
 </section>
 
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-buttons-outline">
@@ -350,25 +348,25 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7 mt-3">
   <div class="container">
     <div class="row justify-space-between text-center py-2">
       <div class="col-12 mx-auto">
-        <button type="button" class="btn bg-gradient-primary btn-sm me-2">Small</button>
+        <button type="button" class="btn bg-gradient-dark btn-sm me-2">Small</button>
 
-        <button type="button" class="btn bg-gradient-primary w-auto me-2">Default</button>
+        <button type="button" class="btn bg-gradient-dark w-auto me-2">Default</button>
 
-        <button type="button" class="btn bg-gradient-primary btn-lg">Large</button>
+        <button type="button" class="btn bg-gradient-dark btn-lg">Large</button>
 
       </div>
     </div>
   </div>
 </section>
 
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-buttons-sizes">
@@ -378,11 +376,11 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between text-center py-2"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 mx-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary btn-sm me-2"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-dark btn-sm me-2"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
 
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary w-auto me-2"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-dark w-auto me-2"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
 
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary btn-lg"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-dark btn-lg"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
 
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -423,30 +421,30 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7 mt-3">
   <div class="container">
     <div class="row justify-space-between text-center py-2">
       <div class="col-12 mx-auto">
-        <button class="btn bg-gradient-primary btn-icon btn-sm" type="button">
+        <button class="btn bg-gradient-dark btn-icon btn-sm" type="button">
           <div class="d-flex align-items-center">
-            <i class="material-icons me-2" aria-hidden="true">favorite</i>
+            <i class="material-symbols-rounded me-2" aria-hidden="true">favorite</i>
             Small
           </div>
         </button>
 
-        <button class="btn bg-gradient-primary btn-icon" type="button">
+        <button class="btn bg-gradient-dark btn-icon" type="button">
           <div class="d-flex align-items-center">
-            <i class="material-icons me-2" aria-hidden="true">favorite</i>
+            <i class="material-symbols-rounded me-2" aria-hidden="true">favorite</i>
             Default
           </div>
         </button>
 
-        <button class="btn bg-gradient-primary btn-icon btn-lg" type="button">
+        <button class="btn bg-gradient-dark btn-icon btn-lg" type="button">
           <div class="d-flex align-items-center">
-            <i class="material-icons me-2" aria-hidden="true">favorite</i>
+            <i class="material-symbols-rounded me-2" aria-hidden="true">favorite</i>
             Large
           </div>
         </button>
@@ -455,7 +453,7 @@
   </div>
 </section>
 
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-buttons-icon-left">
@@ -465,23 +463,23 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between text-center py-2"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 mx-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary btn-icon btn-sm"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-dark btn-icon btn-sm"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons me-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-symbols-rounded me-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
             Small
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/button&gt;</span>
 
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary btn-icon"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-dark btn-icon"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons me-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-symbols-rounded me-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
             Default
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/button&gt;</span>
 
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary btn-icon btn-lg"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-dark btn-icon btn-lg"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons me-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-symbols-rounded me-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
             Large
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/button&gt;</span>
@@ -524,31 +522,31 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
         <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <section class="py-7 mt-3">
   <div class="container">
     <div class="row justify-space-between text-center py-2">
       <div class="col-12 mx-auto">
-        <button class="btn bg-gradient-primary btn-icon btn-sm" type="button">
+        <button class="btn bg-gradient-dark btn-icon btn-sm" type="button">
           <div class="d-flex align-items-center">
             Small
-            <i class="material-icons ms-2" aria-hidden="true">favorite</i>
+            <i class="material-symbols-rounded ms-2" aria-hidden="true">favorite</i>
           </div>
         </button>
 
-        <button class="btn bg-gradient-primary btn-icon" type="button">
+        <button class="btn bg-gradient-dark btn-icon" type="button">
           <div class="d-flex align-items-center">
             Default
-            <i class="material-icons ms-2" aria-hidden="true">favorite</i>
+            <i class="material-symbols-rounded ms-2" aria-hidden="true">favorite</i>
           </div>
         </button>
 
-        <button class="btn bg-gradient-primary btn-icon btn-lg" type="button">
+        <button class="btn bg-gradient-dark btn-icon btn-lg" type="button">
           <div class="d-flex align-items-center">
             Large
-            <i class="material-icons ms-2" aria-hidden="true">favorite</i>
+            <i class="material-symbols-rounded ms-2" aria-hidden="true">favorite</i>
           </div>
         </button>
       </div>
@@ -556,7 +554,7 @@
   </div>
 </section>
 
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-buttons-icon-right">
@@ -566,24 +564,24 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between text-center py-2"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 mx-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary btn-icon btn-sm"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-dark btn-icon btn-sm"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>
             Small
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons ms-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-symbols-rounded ms-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/button&gt;</span>
 
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary btn-icon"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-dark btn-icon"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>
             Default
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons ms-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-symbols-rounded ms-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/button&gt;</span>
 
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary btn-icon btn-lg"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn bg-gradient-dark btn-icon btn-lg"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>
             Large
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons ms-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-symbols-rounded ms-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>favorite<span class="nt">&lt;/i&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
@@ -599,16 +597,13 @@
     </div>
   </div>
 
-  {% endblock content %}
-  
-  {% block footer %}
-  
-  {% include 'includes/footer_fullscreen.html' %}
-  
-  {% endblock footer %}
+{% endblock content %}
 
-  {% block javascripts %}
-  
-  {% include 'includes/scripts_sections.html' %}
-  
-  {% endblock javascripts %}
+{% block footer %}
+  {% include "includes/footer-light.html" %}
+{% endblock footer %}
+
+{% block extra_js %}
+  <script src="{% static "assets/js/plugins/prism.min.js" %}"></script>
+  <script src="{% static "assets/js/plugins/highlight.min.js" %}"></script>
+{% endblock extra_js %}

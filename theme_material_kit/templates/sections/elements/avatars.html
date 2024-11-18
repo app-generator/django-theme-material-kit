@@ -1,14 +1,11 @@
-{% extends 'layouts/base_background.html' %}
+{% extends "layouts/base.html" %}
 {% load static %}
 
-{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
-{% block body %} class="avatars-sections" {% endblock body %}
+{% block body %}avatars-sections{% endblock body %}
 
-{% block header %}
-
-{% include 'includes/navigation_light.html' %}
-
-{% endblock header %}
+{% block navigation %}
+  {% include "includes/navigation-light.html" %}
+{% endblock navigation %}
 
 {% block content %}
 
@@ -56,30 +53,30 @@
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <div class="container py-6">
   <div class="row mt-5 text-center">
     <div class="col-12">
       <div class="avatar-group">
         <a href="javascript:;" class="avatar avatar-lg rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
-          <img alt="Image placeholder" src="{% static 'img/team-1.jpg' %}">
+          <img alt="Image placeholder" src="{% static "assets/img/team-1.jpg" %}">
         </a>
         <a href="javascript:;" class="avatar avatar-lg rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
-          <img alt="Image placeholder" src="{% static 'img/team-2.jpg' %}">
+          <img alt="Image placeholder" src="{% static "assets/img/team-2.jpg" %}">
         </a>
         <a href="javascript:;" class="avatar avatar-lg rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alexander Smith">
-          <img alt="Image placeholder" src="{% static 'img/team-3.jpg' %}">
+          <img alt="Image placeholder" src="{% static "assets/img/team-3.jpg" %}">
         </a>
         <a href="javascript:;" class="avatar avatar-lg rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
-          <img alt="Image placeholder" src="{% static 'img/team-4.jpg' %}">
+          <img alt="Image placeholder" src="{% static "assets/img/team-4.jpg" %}">
         </a>
       </div>
     </div>
   </div>
 </div>
 
-        <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/popper.min.js" %}" type="text/javascript"></script>
+        <script src="{% static "assets/js/core/bootstrap.min.js" %}" type="text/javascript"></script>
         <script>
           var tooltipTriggerList = [].slice.call(document.querySelectorAll(&#39;[data-bs-toggle="tooltip"]&#39;))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -95,16 +92,16 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"avatar-group"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">class=</span><span class="s">"avatar avatar-lg rounded-circle"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Ryan Tompson"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static 'img/team-1.jpg' %}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static "assets/img/team-1.jpg" %}"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/a&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">class=</span><span class="s">"avatar avatar-lg rounded-circle"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Romina Hadid"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static 'img/team-2.jpg' %}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static "" %}"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/a&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">class=</span><span class="s">"avatar avatar-lg rounded-circle"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Alexander Smith"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static 'img/team-3.jpg' %}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static "assets/img/team-3.jpg" %}"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/a&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">class=</span><span class="s">"avatar avatar-lg rounded-circle"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Jessica Doe"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static 'img/team-4.jpg' %}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static "assets/img/team-4.jpg" %}"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -157,24 +154,24 @@
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
         <div class="container py-6">
   <div class="row mt-5 text-center">
     <div class="col-12">
       <a href="javascript:;" class="avatar avatar-xs rounded-circle">
-        <img alt="Image placeholder" src="{% static 'img/team-4.jpg' %}">
+        <img alt="Image placeholder" src="{% static "assets/img/team-4.jpg" %}">
       </a>
       <a href="javascript:;" class="avatar avatar-sm rounded-circle">
-        <img alt="Image placeholder" src="{% static 'img/team-4.jpg' %}">
+        <img alt="Image placeholder" src="{% static "assets/img/team-4.jpg" %}">
       </a>
       <a href="javascript:;" class="avatar rounded-circle">
-        <img alt="Image placeholder" src="{% static 'img/team-4.jpg' %}">
+        <img alt="Image placeholder" src="{% static "assets/img/team-4.jpg" %}">
       </a>
       <a href="javascript:;" class="avatar avatar-lg rounded-circle">
-        <img alt="Image placeholder" src="{% static 'img/team-4.jpg' %}">
+        <img alt="Image placeholder" src="{% static "assets/img/team-4.jpg" %}">
       </a>
       <a href="javascript:;" class="avatar avatar-xl rounded-circle">
-        <img alt="Image placeholder" src="{% static 'img/team-4.jpg' %}">
+        <img alt="Image placeholder" src="{% static "assets/img/team-4.jpg" %}">
       </a>
     </div>
   </div>
@@ -189,19 +186,19 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mt-5 text-center"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">class=</span><span class="s">"avatar avatar-xs rounded-circle"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static 'img/team-4.jpg' %}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static "assets/img/team-4.jpg" %}"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">class=</span><span class="s">"avatar avatar-sm rounded-circle"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static 'img/team-4.jpg' %}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static "assets/img/team-4.jpg" %}"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">class=</span><span class="s">"avatar rounded-circle"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static 'img/team-4.jpg' %}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static "assets/img/team-4.jpg" %}"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">class=</span><span class="s">"avatar avatar-lg rounded-circle"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static 'img/team-4.jpg' %}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static "assets/img/team-4.jpg" %}"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">class=</span><span class="s">"avatar avatar-xl rounded-circle"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static 'img/team-4.jpg' %}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Image placeholder"</span> <span class="na">src=</span><span class="s">"{% static "assets/img/team-4.jpg" %}"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -214,16 +211,14 @@
       </div>
     </div>
   </div>
-  {% endblock content %}
-  
-  {% block footer %}
-  
-  {% include 'includes/footer_fullscreen.html' %}
-  
-  {% endblock footer %}
 
-  {% block javascripts %}
-  
-  {% include 'includes/scripts_sections.html' %}
-  
-  {% endblock javascripts %}
+{% endblock content %}
+
+{% block footer %}
+  {% include "includes/footer-light.html" %}
+{% endblock footer %}
+
+{% block extra_js %}
+  <script src="{% static "assets/js/plugins/prism.min.js" %}"></script>
+  <script src="{% static "assets/js/plugins/highlight.min.js" %}"></script>
+{% endblock extra_js %}

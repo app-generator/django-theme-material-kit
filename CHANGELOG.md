@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.0.20] 2024-11-21
+### Changes
+
+- [Django Material Kit](https://app-generator.dev/docs/products/django-libs/theme-material-kit.html) - Documentation & Support Links
+- [Django Material Kit](https://app-generator.dev/product/material-kit/django/) - The product that uses the library
+- [Getting Started with Django](https://app-generator.dev/docs/technologies/django/index.html) - Learn how to code **Django** Projects
+
 ## [1.0.19] 2023-02-09
 ### Changes
 

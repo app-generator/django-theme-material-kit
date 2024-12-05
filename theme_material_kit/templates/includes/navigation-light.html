@@ -465,18 +465,28 @@
 
             </ul>
           </li>
+
+          {% if request.user.is_authenticated %}
           <li class="nav-item ms-lg-auto">
-            <a class="nav-link nav-link-icon me-2" href="https://github.com/creativetimofficial/material-kit"
-              target="_blank">
-              <i class="fa fa-github me-1"></i>
+            <a class="nav-link nav-link-icon me-2" href="{% url 'logout' %}">
+              <i class="fa fa-sign-out me-1"></i>
               <p class="d-inline text-sm z-index-1 font-weight-semibold" data-bs-toggle="tooltip"
-                data-bs-placement="bottom" title="Star us on Github">Github</p>
+                data-bs-placement="bottom" title="Logout">Logout</p>
             </a>
           </li>
+          {% else %}
+          <li class="nav-item ms-lg-auto">
+            <a class="nav-link nav-link-icon me-2" href="{% url 'login' %}">
+              <i class="fa fa-sign-in me-1"></i>
+              <p class="d-inline text-sm z-index-1 font-weight-semibold" data-bs-toggle="tooltip"
+                data-bs-placement="bottom" title="Sign IN">Sign IN</p>
+            </a>
+          </li>
+          {% endif %}
           <li class="nav-item my-auto ms-3 ms-lg-0">
 
-            <a href="https://www.creative-tim.com/product/material-kit-pro"
-              class="btn  bg-gradient-dark  mb-0 mt-2 mt-md-0">Upgrade to Pro</a>
+            <a href="https://app-generator.dev/product/material-kit/django/"
+              class="btn  bg-gradient-dark  mb-0 mt-2 mt-md-0">Download</a>
 
           </li>
         </ul>

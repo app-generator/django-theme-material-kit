@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.0.25] 2024-12-06
+### Changes
+
+- Update Media
+- UI Fixes (links & assets)
+
 ## [1.0.24] 2024-12-06
 ### Changes
 

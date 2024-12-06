@@ -11,7 +11,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7 text-center mx-auto">
-            <h1 class="text-white font-weight-black pt-3 mt-n5">Material Kit 3</h1>
+            <h1 class="text-white font-weight-black pt-3 mt-n5">Django Material Kit</h1>
             <p class="lead text-white mt-3">Free & Open Source Web UI Kit built over Bootstrap 5. <br /> Join over 1.6 million developers around the world. </p>
           </div>
         </div>
@@ -796,7 +796,7 @@
           <div class="col-md-8">
             <div class="row mt-4">
               <div class="col-md-6">
-                <a href="./pages/about-us.html">
+                <a href="{% url "about-us" %}">
                   <div class="card move-on-hover">
                     <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/about-us.jpg" alt="aboutus">
                   </div>
@@ -806,7 +806,7 @@
                 </a>
               </div>
               <div class="col-md-6 mt-md-0 mt-5">
-                <a href="./pages/contact-us.html">
+                <a href="{% url "contact-us" %}">
                   <div class="card move-on-hover">
                     <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/contact-us.jpg" alt="contacus">
                   </div>
@@ -816,7 +816,7 @@
                 </a>
               </div>
               <div class="col-md-6 mt-md-3 mt-6">
-                <a href="./pages/sign-in.html">
+                <a href="{% url 'login' %}">
                   <div class="card move-on-hover">
                     <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/sign-in.jpg" alt="signin">
                   </div>
@@ -826,7 +826,7 @@
                 </a>
               </div>
               <div class="col-md-6 mt-md-3 mt-6">
-                <a href="./pages/author.html">
+                <a href="{% url 'author' %}">
                   <div class="card move-on-hover">
                     <img class="w-100" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/assets/img/author.jpg" alt="author">
                   </div>
@@ -855,7 +855,7 @@
               <h5 class="text-white">Built by developers</h5>
               <h2 class="text-white font-weight-bolder">Complex Documentation</h2>
               <p class=" text-white opacity-8">From colors, cards, typography to complex elements, you will find the full documentation. Play with the utility classes and you will create unlimited combinations for our components.</p>
-              <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit" class="text-white icon-move-right">
+              <a href="https://app-generator.dev/docs/products/django/material-kit/index.html" class="text-white icon-move-right">
                 Read docs
                 <i class="fas fa-arrow-right text-sm ms-1"></i>
               </a>
@@ -872,7 +872,7 @@
             <div class="ps-0 ps-md-3 mt-3 mt-md-0">
               <h5 class="text-white">Getting Started</h5>
               <p class="text-white">Check the possible ways of working with our product and the necessary files for building your own project.</p>
-              <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit" class="text-white icon-move-right">
+              <a href="https://app-generator.dev/docs/products/django/material-kit/index.html" class="text-white icon-move-right">
                 Let's start
                 <i class="fas fa-arrow-right text-sm ms-1"></i>
               </a>
@@ -1014,7 +1014,7 @@
               <h3 class="h4 text-white mb-0">Do you love this awesome</h3>
               <h3 class="text-white">UI Kit for Bootstrap 5?</h3>
               <p class="text-white mb-5">Cause if you do, it can be yours for FREE. Hit the button below to navigate to Creative Tim where you can find the Design System in HTML. Start a new project or give an old Bootstrap project a new look!</p>
-              <a href="https://www.creative-tim.com/product/material-kit" class="btn btn-success btn-lg mb-3 mb-sm-0">Download HTML</a>
+              <a href="https://app-generator.dev/product/material-kit/django/" class="btn btn-success btn-lg mb-3 mb-sm-0">Download</a>
             </div>
           </div>
         </div>
@@ -1026,7 +1026,7 @@
               <h3 class="mt-5 mb-4">Available on these technologies</h3>
               <div class="row justify-content-center">
                 <div class="col-lg-2 col-4">
-                  <a href="https://www.creative-tim.com/product/soft-ui-design-system" target="_blank">
+                  <a href="https://www.creative-tim.com/product/soft-ui-design-system?AFFILIATE=128200" target="_blank">
                     <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/bootstrap5.jpg" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bootstrap 5 - Most popular front-end component library">
                   </a>
                 </div>
@@ -1087,28 +1087,6 @@
       </div>
     </section>
     <!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
-    <div class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 ms-auto">
-            <h4 class="mb-1">Thank you for your support!</h4>
-            <p class="lead mb-0">We deliver the best web products</p>
-          </div>
-          <div class="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
-            <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Kit%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23bootstrap5&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit" class="btn btn-twitter mb-0 me-2" target="_blank">
-              <i class="fab fa-twitter me-1"></i> Tweet
-            </a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-kit" class="btn btn-facebook mb-0 me-2" target="_blank">
-              <i class="fab fa-facebook-square me-1"></i> Share
-            </a>
-            <a href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-kit" class="btn btn-pinterest mb-0 me-2" target="_blank">
-              <i class="fab fa-pinterest me-1"></i> Pin it
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
   </div>
 {% endblock content %}
 

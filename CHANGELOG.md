@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [1.0.23] 2024-12-06
+### Changes
+
+- UI Fixes (links & assets)
+
 ## [1.0.22] 2024-12-05
 ### Changes
 

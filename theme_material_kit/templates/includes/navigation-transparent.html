@@ -4,7 +4,7 @@
 <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
     <div class="container">
       <a class="navbar-brand  text-white " href="{% url "index" %}" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom">
-        Material Kit 3
+        Django Material Kit
       </a>
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mt-2">
@@ -40,7 +40,7 @@
                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
                   Account
                 </h6>
-                <a href="./pages/sign-in.html" class="dropdown-item border-radius-md">
+                <a href="{% url 'login' %}" class="dropdown-item border-radius-md">
                   <span>Sign In</span>
                 </a>
               </div>
@@ -63,7 +63,7 @@
                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
                   Account
                 </h6>
-                <a href="./pages/sign-in.html" class="dropdown-item border-radius-md">
+                <a href="{% url 'login' %}" class="dropdown-item border-radius-md">
                   <span>Sign In</span>
                 </a>
 
@@ -379,47 +379,20 @@
                 <ul class="list-group">
                   <li class="nav-item list-group-item border-0 p-0">
                     <a class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit ">
+                      href="https://app-generator.dev/docs/products/django/material-kit/index.html">
                       <h6
                         class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                         Getting Started</h6>
-                      <span class="text-sm">All about overview, quick start, license and contents</span>
+                      <span class="text-sm">All about overview, and quick start</span>
                     </a>
                   </li>
                   <li class="nav-item list-group-item border-0 p-0">
                     <a class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/bootstrap/colors/material-kit ">
+                      href="https://app-generator.dev/docs/products/django-libs/theme-material-kit.html">
                       <h6
                         class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                        Foundation</h6>
+                        UI Theme</h6>
                       <span class="text-sm">See our colors, icons and typography</span>
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/bootstrap/alerts/material-kit ">
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                        Components</h6>
-                      <span class="text-sm">Explore our collection of fully designed components</span>
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/bootstrap/datepicker/material-kit ">
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                        Plugins</h6>
-                      <span class="text-sm">Check how you can integrate our plugins</span>
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/bootstrap/utilities/material-kit ">
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                        Utility Classes</h6>
-                      <span class="text-sm">For those who want flexibility, use our utility classes</span>
                     </a>
                   </li>
                 </ul>
@@ -427,39 +400,18 @@
 
               <div class="row d-lg-none">
                 <div class="col-md-12 g-0">
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="{% url "about-us" %}">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="https://app-generator.dev/docs/products/django/material-kit/index.html">
                     <h6
                       class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                       Getting Started</h6>
                     <span class="text-sm">All about overview, quick start, license and contents</span>
                   </a>
 
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="{% url "about-us" %}">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="https://app-generator.dev/docs/products/django-libs/theme-material-kit.html">
                     <h6
                       class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                      Foundation</h6>
+                      UI Theme</h6>
                     <span class="text-sm">See our colors, icons and typography</span>
-                  </a>
-
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="{% url "about-us" %}">
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                      Components</h6>
-                    <span class="text-sm">Explore our collection of fully designed components</span>
-                  </a>
-
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="{% url "about-us" %}">
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                      Plugins</h6>
-                    <span class="text-sm">Check how you can integrate our plugins</span>
-                  </a>
-
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="{% url "about-us" %}">
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                      Utility Classes</h6>
-                    <span class="text-sm">For those who want flexibility, use our utility classes</span>
                   </a>
                 </div>
               </div>

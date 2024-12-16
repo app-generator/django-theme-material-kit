@@ -18,6 +18,22 @@ Modern UI Library for **Django**, Auth Pages (registration included) crafted on 
   
 <br />
 
+### Build a Starter with [Django App Generator - Material UI KIT](https://app-generator.dev/tools/django-generator/material-kit/)
+
+- Access the [App Generator](https://app-generator.dev/tools/django-generator/) page
+- Select **Material UI Kit** as the preferred design
+- (Optional) Design Database: edit models and fields
+- (Optional) Edit the fields for the extended user model
+- (Optional) Enable OAuth for GitHub
+- (Optional) Add Celery (async tasks)
+- (Optional) Enable Dynamic API Module
+- Docker Scripts
+- Render CI/Cd Scripts
+
+**The generated Django project is available as a ZIP Archive and also uploaded to GitHub.**
+
+<br />
+
 ![Django Material Kit - Modern UI Library for Django crafted on top of a modern Bootstrap, Open-Source Design.](https://github.com/user-attachments/assets/d83d18dd-b147-4fcb-ba3a-cc4926c6d536)
 
 <br />
